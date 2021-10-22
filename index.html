@@ -11,15 +11,19 @@
 </head>
 
 <body>
-  <div class="top-ad">
-    <img src="./assets/images/top-ad.png" alt="Dynamic Add">
-  </div>
   <header class="header">
+    <div class="top-ad">
+      <img src="./assets/images/top-ad.png" alt="Dynamic Add">
+    </div>
     <div class="header-wrapper">
       <div class="header-top">
         <div class="header-promotion">
-          <h3>newsletter</h3>
-          <p>Sign up to read our regular email newsletters</p>
+          <a href="#">
+            <h3>newsletter</h3>
+          </a>
+          <a href="#">
+            <p>Sign up to read our regular email <br> newsletters</p>
+          </a>
         </div>
         <div class="header-logo">
           <a href="#">NewScientist</a>
@@ -39,7 +43,7 @@
           <li class="primary-nav__item"><a href="#" class="primary-nav__link primary-nav__link--selected">Space</a></li>
           <li class="primary-nav__item"><a href="#" class="primary-nav__link">Physics</a></li>
           <li class="primary-nav__item"><a href="#" class="primary-nav__link">Health</a></li>
-          <li class="primary-nav__item"><a href="#" class="primary-nav__link">More (down arrow thing)</a></li>
+          <li class="primary-nav__item"><a href="#" class="primary-nav__link">More ↡</a></li>
           <li class="primary-nav__item"><a href="#" class="primary-nav__link">Shop</a></li>
           <li class="primary-nav__item"><a href="#" class="primary-nav__link">Courses</a></li>
           <li class="primary-nav__item"><a href="#" class="primary-nav__link">Events</a></li>
@@ -49,13 +53,13 @@
       </nav>
       <div class="header-tools">
         <a href="#" class="header-tools__item header-tools__login-link">
-          <span class="header-tools__login-icon">icon goes here</span>
+          <span class="header-tools__icon"><i class="fa fa-user" aria-hidden="true"></i></span>
           <span class="header-tools__item-text">Sign In</span>
         </a>
-        <button>
-          <span class="header-tools__search-icon">icon goes here</span>
+        <a href="#" class="header-tools__item header-tools__login-link">
+          <span class="header-tools__icon"><i class="fa fa-search" aria-hidden="true"></i></span>
           <span class="header-tools__item-text">Search</span>
-        </button>
+        </a>
       </div>
     </div>
   </header>

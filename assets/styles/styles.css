@@ -1,3 +1,128 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 html {
   /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
@@ -16,7 +141,151 @@ html {
   box-sizing: inherit;
 }
 
+/* Universal Styles */
+/* body {
+  width: 60%;
+  margin: 0 auto;
+} */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Top Advertising Section */
+
+.top-ad {
+  text-align: center;
+}
+
+/* Header */
+
+.header {
+  border-bottom: 1px solid gray;
+  padding: 0 18%;
+}
+
+/* Top Nav */
+
+.header-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: center;
+}
+
+.header-wrapper {
+  margin: 1em 0;
+}
+
+.header-promotion {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.header-promotion h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #00b3e5;
+  margin-bottom: 0.2em;
+}
+
+.header-promotion h3:hover {
+  color: #0680a2;
+}
+
+.header-promotion p {
+  font-size: 0.95em;
+  letter-spacing: 1px;
+  color: #afafaf;
+}
+
+.header-promotion p:hover {
+  text-decoration: underline;
+}
+
+.header-logo {
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
+.header-subscribe a {
+  display: block;
+  font-size: 0.9em;
+  background-color: #00b3e5;
+  padding: 0.75em 1.25em;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.header-subscribe a:hover {
+  background-color: #0680a2;
+}
+
+/* Bottom Nav */
+
+.header-navigation::before {
+  display: block;
+  content: "";
+  position: relative;
+  top: 0;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.15em;
+  font-weight: bold;
+  /* position: sticky;
+  top: 0; */
+}
+
+.primary-nav {
+  flex-grow: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+.primary-nav__link--selected {
+  color: #00b3e5;
+  border-bottom: 5px solid black;
+}
+
+.nav-links a:hover {
+  color: #00b3e5;
+  border-bottom: 5px solid black;
+}
+
+.header-tools {
+  margin-left: 1em;
+}
+
+.header-tools__icon .fa {
+  padding: 0;
+  margin: 0 0.75em;
+  width: 0;
+  font-size: 1em;
+}
+
+.header-tools__login-link:hover {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
 /* Main */
+main {
+  width: 60%;
+  margin: 0 auto;
+}
 
 /* Links */
 .fa {
